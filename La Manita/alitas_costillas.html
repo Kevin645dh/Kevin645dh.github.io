@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alitas y Costillas - La Manita</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://scontent.fmex1-1.fna.fbcdn.net/v/t1.15752-9/462544310_1099764528207433_534812782399401296_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=ilh-0xWyO6cQ7kNvgHJE68Y&_nc_zt=23&_nc_ht=scontent.fmex1-1.fna&_nc_gid=A_bB0jZFOgKc4nDBovy_jUg&oh=03_Q7cD1QF9SfKoIGGvhP6WrM5_OtoF7C_53Kye_H3VV96oNx7suw&oe=673D32F8'); /* Cambia esta ruta por la imagen de fondo */
+            background-size: 1920px 1080px; /* Tamaño específico de la imagen de fondo */
+            background-position: center; /* Centra la imagen en la página */
+            background-attachment: fixed; /* Hace que la imagen se quede fija mientras haces scroll */
+            color: #fff; /* Color de texto blanco para contrastar con la imagen */
+        
+       header {
+            background-color: rgba(192, 57, 43, 0.8); /* Fondo semi-transparente */
+            color: white;
+            padding: 20px;
+            text-align: center; 
+        }
+        h1 {
+            margin: 0;
+            font-size: 50px;
+        }
+        p {
+            font-size: 24px;
+            color: #f39c12;
+        }
+        nav {
+            margin-top: 30px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            display: block;
+            padding: 15px;
+            background-color: #d35400;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            background-color: #e67e22;
+        }
+        section {
+            display: flex;
+            justify-content: center; 
+            align-items: flex-start;
+            padding: 20px;
+            margin: 20px;
+        }
+        .menu {
+            text-align: center; 
+            font-size: 20px;
+            line-height: 1.8;
+            width: 50%; 
+            color: black; 
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco para el menú */
+            border-radius: 10px; 
+            padding: 20px; 
+            position: relative; /* Para colocar imágenes en posición absoluta */
+        }
+        .menu h2 {
+            font-size: 30px;
+            color: black; 
+        }
+        .menu ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        .menu ul li {
+            margin-bottom: 10px;
+        }
+        .price {
+            font-weight: bold; 
+        }
+        .left-image, .right-image {
+            position: absolute; /* Posición absoluta para las imágenes */
+            top: -50px; /* Ajusta la posición vertical de las imágenes */
+            width: 35%; /* Ancho de las imágenes */
+            height: auto; /* Ajusta la altura automáticamente */
+            z-index: -1; /* Coloca las imágenes detrás del menú */
+        }
+        .left-image {
+            left: -40%; /* Mueve la imagen a la izquierda */
+             top: 5%;
+        }
+        .right-image {
+            right: -40%; /* Mueve la imagen a la derecha */
+            top: -5%; /* Ajusta la posición vertical de la imagen de la derecha */
+            width: 30%; /* Cambia este valor para ajustar el tamaño de la imagen de la derecha */
+        }
+        footer {
+            background-color: rgba(52, 73, 94, 0.8);
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nuestras Alitas y Costillas</h1>
+        <p>¡Delicias para todos los gustos!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="hamburguesas.html">Hamburguesas</a></li>
+            <li><a href="alitas_costillas.html">Alitas y Costillas</a></li>
+            <li><a href="postres.html">Postres</a></li>
+            <li><a href="metodos_pago.html">Métodos de Pago</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <!-- Menú de Alitas y Costillas -->
+        <div class="menu">
+            <h2>Menú de Alitas y Costillas</h2>
+            <ul>
+                <li><strong>Alitas Sencillas  </strong><span class="price"></span></li>
+                <li><strong>Costillas Sencillas  </strong><span class="price"></span></li>
+                <li><strong>Alitas Especial BBQ  </strong><span class="price"></span></li>
+                <li><strong>Costillas Especial Habanero  </strong><span class="price"></span></li>
+                <li><strong>Costillas Habanero </strong> <span class="price"></span></li>
+                <li><strong>Sincronizadas Adobadas Pierna </strong> <span class="price"></span></li>
+                <li><strong>Papas a la Francesa </strong> <span class="price"></span></li>
+            </ul>
+            <img class="left-image" src="https://scontent.fmex1-6.fna.fbcdn.net/v/t1.15752-9/462559503_1571859040099211_304058584800044459_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_ohc=7YZPC5st1LcQ7kNvgHts8ww&_nc_zt=23&_nc_ht=scontent.fmex1-6.fna&_nc_gid=AumVJxeOGp3oOPKTw_BJl30&oh=03_Q7cD1QGLAyGkds1n-cHNiPa4z8rEKQckenGP2YiXCWyAhUmu9w&oe=673D6721"> <!-- Cambia esta ruta por tu imagen izquierda -->
+            <img class="right-image" src="https://scontent.fmex1-6.fna.fbcdn.net/v/t1.15752-9/462551855_426855123796918_3601557578799514956_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=cH5W-aQM2FoQ7kNvgG-_P7-&_nc_zt=23&_nc_ht=scontent.fmex1-6.fna&_nc_gid=Ah_dxS2KBZN0sdt4kz31n9M&oh=03_Q7cD1QH_qgSZ2etWwB9UiyhNKB-KkapPCSJkDQAwsM-wnUy8vA&oe=673D13E9" alt="Imagen derecha"> <!-- Cambia esta ruta por tu imagen derecha -->
+        </div>
+    </section>
+
+    <footer>
+        <p>¡Haz tu pedido ahora y disfruta de La Manita!</p>
+        <p>Llámanos al <span style="color: #f39c12; font-weight: bold;">56 3779 0059</span></p>
+    </footer>
+
+</body>
+</html>
